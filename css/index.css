@@ -74,19 +74,34 @@ p {
 }
 
 /* Header styling */
-nav{ 
+nav { 
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 70%;
+    text-align: center;
+    border: pink dashed 2px;
 }
 
 nav a {
-
+    text-decoration: none;
+    color: black;    
 }
 
-.navigation div{
+.navi {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
+    margin-bottom: 3%;
+}
+
+.navi img {
+    width: 30%;
+}
+
+.headerimg img{ 
+    height: 100%;
+    width: 100%;
 }
 
 /* Footer */
@@ -107,6 +122,12 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Universal*/
+
+section {
+    padding: 5%; 
 }
 
 /* --Index Styling-- */
@@ -145,13 +166,48 @@ footer nav a {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.one {
+    background-color: teal;
+}
+.two {
+    background-color: gold;}
+.three {
+    background-color: cadetblue;
+}
+.four{
+    background-color: coral;
+}
+.five{
+    background-color: crimson;
+}
+.six{
+    background-color: forestgreen;}
+
+.seven{
+    background-color: darkorchid;
+}
+.eight{
+    background-color: hotpink;
+}
+.nine {
+    background-color: indigo;
+}
+.ten {background-color:dodgerblue;
+}
+
 
 /* Bottom Content*/
 .bottom-content {
@@ -169,3 +225,17 @@ footer nav a {
 }
 
 /*  About Styling-- */
+
+.aboutboxes div {
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: black dashed 1px;
+    width: 45%;
+}
+
+.aboutboxes { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: orange solid 1px;
+}
