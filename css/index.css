@@ -80,7 +80,6 @@ nav {
     align-items: flex-end;
     width: 70%;
     text-align: center;
-    border: pink dashed 2px;
 }
 
 nav a {
@@ -226,16 +225,34 @@ section {
 
 /*  About Styling-- */
 
+.about {
+    border-bottom: dashed black 1px;
+}
+
 .aboutboxes div {
     display: flex;
     flex-flow: column nowrap;
     border-bottom: black dashed 1px;
     width: 45%;
+    padding-bottom: 3%;
+    margin: 2% 0;
 }
 
 .aboutboxes { 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    border: orange solid 1px;
+}
+
+.aboutboxes h2 {
+    margin: 3% 0;}
+
+.aboutboxes button {
+   border: black solid 2px;
+   border-radius: 10px;
+   width: 35%;
+   display: inline;
+   padding: 2%;
+   margin: 3% 0;
+   font-size: 14px;
 }
