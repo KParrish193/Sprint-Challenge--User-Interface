@@ -66,11 +66,71 @@ p {
     line-height: 1.4;
 }
 
+/* CSS Start*/
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/* Header styling */
+nav { 
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 70%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;    
+}
+
+.navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.navi img {
+    width: 30%;
+}
+
+.headerimg img{ 
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Universal*/
+
+section {
+    padding: 5%; 
+}
+
+/* --Index Styling-- */
+/* Top Content Styling*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +145,7 @@ p {
     padding-bottom: 20px;  
 }
 
+/* Middle Content Styling and Boxes */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -104,7 +165,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,6 +172,43 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.one {
+    background-color: teal;
+}
+.two {
+    background-color: gold;}
+.three {
+    background-color: cadetblue;
+}
+.four{
+    background-color: coral;
+}
+.five{
+    background-color: crimson;
+}
+.six{
+    background-color: forestgreen;}
+
+.seven{
+    background-color: darkorchid;
+}
+.eight{
+    background-color: hotpink;
+}
+.nine {
+    background-color: indigo;
+}
+.ten {background-color:dodgerblue;
+}
+
+
+/* Bottom Content*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,21 +223,36 @@ p {
     padding-right: 0;
 }
 
-footer {
-    width: 100%;
-    background: black;
+/*  About Styling-- */
+
+.about {
+    border-bottom: dashed black 1px;
 }
 
-footer nav {
-    width: 60%;
+.aboutboxes div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    flex-flow: column nowrap;
+    border-bottom: black dashed 1px;
+    width: 45%;
+    padding-bottom: 3%;
+    margin: 2% 0;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+.aboutboxes { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.aboutboxes h2 {
+    margin: 3% 0;}
+
+.aboutboxes button {
+   border: black solid 2px;
+   border-radius: 10px;
+   width: 35%;
+   display: inline;
+   padding: 2%;
+   margin: 3% 0;
+   font-size: 14px;
 }
